@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d6913201f70919fdb505d09048195b57 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d6913201f70919fdb505d09048195b57" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d6913201f70919fdb505d09048195b57 = L.map(
+                "map_d6913201f70919fdb505d09048195b57",
+                {
+                    center: [52.235, 21.015],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c99900e17d66f907d06e0b2192c7d031 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c99900e17d66f907d06e0b2192c7d031.addTo(map_d6913201f70919fdb505d09048195b57);
+        
+    
+            var marker_326a6352b09b80d7f4612b0ffaa0e501 = L.marker(
+                [52.24356, 21.00142],
+                {}
+            ).addTo(map_d6913201f70919fdb505d09048195b57);
+        
+    
+        var popup_6bf93adc7297f3b79ad346aaaeef5b3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bf34258e9f78186580afcc3650b0e51 = $(`<div id="html_5bf34258e9f78186580afcc3650b0e51" style="width: 100.0%; height: 100.0%;">Jan Kowalski<br>Teatr Wielki<br>plac Teatralny 1, Warszawa</div>`)[0];
+                popup_6bf93adc7297f3b79ad346aaaeef5b3a.setContent(html_5bf34258e9f78186580afcc3650b0e51);
+            
+        
+
+        marker_326a6352b09b80d7f4612b0ffaa0e501.bindPopup(popup_6bf93adc7297f3b79ad346aaaeef5b3a)
+        ;
+
+        
+    
+    
+            marker_326a6352b09b80d7f4612b0ffaa0e501.bindTooltip(
+                `<div>
+                     Jan Kowalski
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a61ffa10711809d7030e981e966731a = L.marker(
+                [52.24356, 21.00142],
+                {}
+            ).addTo(map_d6913201f70919fdb505d09048195b57);
+        
+    
+        var popup_02cd6b7005fd6b5db7af3d503f34432b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ad658d25d18c2ab2db2cfc141b8e8a1 = $(`<div id="html_3ad658d25d18c2ab2db2cfc141b8e8a1" style="width: 100.0%; height: 100.0%;">Anna Nowak<br>Teatr Wielki<br>plac Teatralny 1, Warszawa</div>`)[0];
+                popup_02cd6b7005fd6b5db7af3d503f34432b.setContent(html_3ad658d25d18c2ab2db2cfc141b8e8a1);
+            
+        
+
+        marker_4a61ffa10711809d7030e981e966731a.bindPopup(popup_02cd6b7005fd6b5db7af3d503f34432b)
+        ;
+
+        
+    
+    
+            marker_4a61ffa10711809d7030e981e966731a.bindTooltip(
+                `<div>
+                     Anna Nowak
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e20c196f7a1a4c1c496ecd1fd27671bf = L.marker(
+                [52.24356, 21.00142],
+                {}
+            ).addTo(map_d6913201f70919fdb505d09048195b57);
+        
+    
+        var popup_b20053681e403dd239912cb96d3ca672 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7150959d94dad19685dee6fc2885da4a = $(`<div id="html_7150959d94dad19685dee6fc2885da4a" style="width: 100.0%; height: 100.0%;">Tomasz Piotr<br>Teatr Wielki<br>plac Teatralny 1, Warszawa</div>`)[0];
+                popup_b20053681e403dd239912cb96d3ca672.setContent(html_7150959d94dad19685dee6fc2885da4a);
+            
+        
+
+        marker_e20c196f7a1a4c1c496ecd1fd27671bf.bindPopup(popup_b20053681e403dd239912cb96d3ca672)
+        ;
+
+        
+    
+    
+            marker_e20c196f7a1a4c1c496ecd1fd27671bf.bindTooltip(
+                `<div>
+                     Tomasz Piotr
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

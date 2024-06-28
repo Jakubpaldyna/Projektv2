@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f770fc7ec1faf4d7449c733842fd7aa6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f770fc7ec1faf4d7449c733842fd7aa6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f770fc7ec1faf4d7449c733842fd7aa6 = L.map(
+                "map_f770fc7ec1faf4d7449c733842fd7aa6",
+                {
+                    center: [52.235, 21.015],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_73852243abdcf319113d75b6750b6582 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_73852243abdcf319113d75b6750b6582.addTo(map_f770fc7ec1faf4d7449c733842fd7aa6);
+        
+    
+            var marker_0aab214bc163dd6fab5cf10f118c8bf5 = L.marker(
+                [52.243, 21.001],
+                {}
+            ).addTo(map_f770fc7ec1faf4d7449c733842fd7aa6);
+        
+    
+        var popup_75b375ee838d9d4d9c9125ea9dc9c422 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c88fda4e3c3fc5b2dadb497f59781c9 = $(`<div id="html_8c88fda4e3c3fc5b2dadb497f59781c9" style="width: 100.0%; height: 100.0%;">Jan Kowalski (Teatr Wielki)</div>`)[0];
+                popup_75b375ee838d9d4d9c9125ea9dc9c422.setContent(html_8c88fda4e3c3fc5b2dadb497f59781c9);
+            
+        
+
+        marker_0aab214bc163dd6fab5cf10f118c8bf5.bindPopup(popup_75b375ee838d9d4d9c9125ea9dc9c422)
+        ;
+
+        
+    
+    
+            marker_0aab214bc163dd6fab5cf10f118c8bf5.bindTooltip(
+                `<div>
+                     Jan Kowalski
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f102a8cc16a9ac43218389ded532232 = L.marker(
+                [52.243, 21.001],
+                {}
+            ).addTo(map_f770fc7ec1faf4d7449c733842fd7aa6);
+        
+    
+        var popup_8677607ba96409f0560ba7a099b3bb95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85a885bf45f1ad64be144f1df1e37b17 = $(`<div id="html_85a885bf45f1ad64be144f1df1e37b17" style="width: 100.0%; height: 100.0%;">Anna Nowak (Teatr Wielki)</div>`)[0];
+                popup_8677607ba96409f0560ba7a099b3bb95.setContent(html_85a885bf45f1ad64be144f1df1e37b17);
+            
+        
+
+        marker_2f102a8cc16a9ac43218389ded532232.bindPopup(popup_8677607ba96409f0560ba7a099b3bb95)
+        ;
+
+        
+    
+    
+            marker_2f102a8cc16a9ac43218389ded532232.bindTooltip(
+                `<div>
+                     Anna Nowak
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
